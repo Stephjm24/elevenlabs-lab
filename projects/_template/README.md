@@ -1,24 +1,32 @@
-# Project name
+# Experiment title
 
-> One-line hook: what's weird or impressive about it.
+<!-- Replace the guidance with your own notes and remove sections that do not apply. -->
 
-**Demo:** link · **Status:** idea / in progress / done
+## What I tested
 
-## What it pushes
-Which ElevenLabs capability this stresses, and the question it's trying to answer.
+What question did you want to answer? Name the ElevenLabs capability you tested and describe the change you made in plain language.
 
-## Recipe
-| Thing | Value |
-|-------|-------|
-| Models | e.g. eleven_v3, scribe |
-| Voices | name + voice_id (and design prompt if designed) |
-| Settings | stability, style, etc. |
-| Credits used | approx |
+## Hear or see the result
 
-Prompts and scripts live in `prompts/`.
+Link the clip, video or interactive demo and describe what to listen or look for. For a comparison, label each sample and explain what changed between takes.
 
-## Results
-What worked, with clips.
+### Transcript
 
-## Where it broke
-What failed, sounded wrong or surprised us.
+Include the words spoken in each sample. For long recordings, link a transcript and give the timestamp for the moment discussed.
+
+## What I noticed
+
+- **What worked.** Describe an observation and point to a sample or timestamp.
+- **Where it broke.** Describe a failure, unexpected result or limit of the comparison.
+- **What I’d try next.** Name one change you would make on another run.
+
+## How I made it
+
+| Detail | Value |
+| --- | --- |
+| Model | Name and version used |
+| Voice | Name, ID and design prompt if applicable |
+| Settings | Values that affected the result |
+| Credits used | Approximate total if known |
+
+List the steps in the order you ran them. Link to prompts or scripts in `prompts/`, code in `src/` and any inputs needed to repeat the experiment.
