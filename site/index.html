@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ElevenLabs Lab</title>
+<style>
+  :root { --bg:#0e0e10; --fg:#f2f0eb; --muted:#8a8780; --line:#2a2a2e; --accent:#ffd84d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 ui-sans-serif, system-ui, sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:64px 24px; }
+  h1 { font-size:clamp(2.2rem,6vw,3.6rem); line-height:1; margin:0 0 12px; letter-spacing:-0.03em; }
+  h1 span { color:var(--accent); }
+  .lede { color:var(--muted); max-width:56ch; margin:0 0 48px; }
+  .card { border-top:1px solid var(--line); padding:24px 0; display:grid; gap:8px; }
+  .card h2 { margin:0; font-size:1.25rem; }
+  .card p { margin:0; color:var(--muted); }
+  .tag { font:12px ui-monospace, monospace; color:var(--accent); text-transform:uppercase; letter-spacing:.08em; }
+  audio { width:100%; max-width:480px; margin-top:6px; }
+  a { color:var(--fg); }
+  .empty { color:var(--muted); border-top:1px solid var(--line); padding-top:24px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Eleven<span>Labs</span> Lab</h1>
+  <p class="lede">Experiments that push AI voice to its limits. None of them are useful, and all of them are worth a listen.</p>
+  <div id="projects"></div>
+</main>
+<script>
+  // Add an entry to projects.json for each experiment; the page renders it.
+  fetch('projects.json').then(r => r.json()).then(list => {
+    const root = document.getElementById('projects');
+    if (!list.length) { root.innerHTML = '<p class="empty">First experiment coming soon.</p>'; return; }
+    for (const p of list) {
+      const el = document.createElement('article');
+      el.className = 'card';
+      el.innerHTML = `<span class="tag"></span><h2></h2><p></p>`;
+      el.querySelector('.tag').textContent = p.pushes || '';
+      el.querySelector('h2').textContent = p.title;
+      el.querySelector('p').textContent = p.hook || '';
+      if (p.audio) { const a = document.createElement('audio'); a.controls = true; a.preload = 'none'; a.src = p.audio; el.appendChild(a); }
+      if (p.link) { const l = document.createElement('a'); l.href = p.link; l.textContent = 'Open experiment →'; el.appendChild(l); }
+      root.appendChild(el);
+    }
+  }).catch(() => {});
+</script>
+</body>
+</html>
