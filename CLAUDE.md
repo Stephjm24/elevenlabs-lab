@@ -28,7 +28,7 @@ Work in four phases and tell the user when you move between them.
 - `src/` holds any code
 
 **Publish.**
-- Add an entry to `site/projects.json` (`title`, `hook`, `pushes`, `audio` and/or `link`) and a row to the README project table.
+- Add an entry to `docs/projects.json` (`title`, `hook`, `pushes`, `audio` and/or `link`) and a row to the README project table.
 - Commit with a clear message and push to `main`. Ask before the first push of each chat.
 - Update `claude/lab-plan.md` ("Built so far") and append findings to `claude/elevenlabs-findings.md`.
 

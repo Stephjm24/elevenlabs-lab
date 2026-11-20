@@ -16,7 +16,7 @@ projects/<slug>/     one folder per experiment (copy projects/_template)
   prompts/           voice-design prompts, scripts, agent prompts
   assets/            final audio/video/images (keep them small, use mp3)
   src/               any code
-site/                static gallery, published with GitHub Pages
+docs/                static gallery, published with GitHub Pages
 ```
 
 ## House rules
