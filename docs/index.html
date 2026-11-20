@@ -15,31 +15,39 @@
     <nav aria-label="Main navigation"><a href="#notebook">Project index</a><a href="https://github.com/Stephjm24/elevenlabs-lab">GitHub</a></nav>
   </header>
   <main id="main" class="wrap">
-    <article class="feature" aria-labelledby="feature-title">
+    <section class="feature" aria-labelledby="feature-title">
       <div class="lead">
-        <p class="byline">Stephan Munroe’s field notebook</p>
-        <h1 id="feature-title">What does a GPS that’s given up sound like?</h1>
-        <p class="intro">I want to give three voices the same directions and listen for the moment each one sounds resigned. Is it the pause before “turn left”, the pitch, or the words themselves?</p>
+        <p class="byline">Field notes by Stephan Munroe</p>
+        <h1 id="feature-title">An open notebook for experiments.</h1>
+        <p class="intro">I use ElevenLabs to follow a question and see what happens. My background in psychology and neuroscience makes me curious about things like how we hear emotion in a voice. Sometimes I just want to invent a radio station for a town that doesn’t exist.</p>
         <a class="index-link" href="#notebook">Browse the project index</a>
       </div>
       <aside class="note" aria-labelledby="note-title">
-        <div class="note-header"><span class="pin" aria-hidden="true"></span><h2 id="note-title">Voice Design Zoo</h2><span>Proposed test</span></div>
-        <div class="note-body">
-          <h3>Draft reading line</h3>
-          <p class="script">“In 200 metres,<br>turn left.<br>Recalculating.”</p>
-          <p class="annotation">Try the last word twice. How long a pause before it sounds like a sigh?</p>
-        </div>
+        <div class="note-header"><span class="pin" aria-hidden="true"></span><h2 id="note-title">Questions in the margins</h2></div>
+        <ul class="questions">
+          <li><a href="#voice-question">Can a voice sound tired of giving directions?</a></li>
+          <li><a href="#agent-question">What would a narrator remember about my last choice?</a></li>
+          <li><a href="#radio-question">What’s on the radio in an imaginary town?</a></li>
+        </ul>
       </aside>
-    </article>
+    </section>
     <section class="index" id="notebook" aria-labelledby="index-title">
       <div class="section-head"><h2 id="index-title">Project index</h2><a href="https://github.com/Stephjm24/elevenlabs-lab/blob/main/IDEAS.md">Full idea notebook</a></div>
       <details class="entry">
         <summary><span class="entry-title">Voice Design Zoo</span><span class="kind">Voice design</span><span class="state">Idea</span></summary>
-        <div class="entry-note"><h3>What I’d try</h3><p>Keep the directions fixed and change the character prompt for each take. I’d compare the three readings side by side, then save the prompts with the clips so someone else can hear what changed.</p></div>
+        <div class="entry-note" id="voice-question"><h3>What I’d try</h3><p>I’d give three GPS voices the same directions and change only the character prompt. I’d compare the three readings side by side, then save the prompts with the clips so someone else can hear what changed.</p></div>
       </details>
       <details class="entry">
         <summary><span class="entry-title">Telephone Game</span><span class="kind">Speech and translation</span><span class="state">Idea</span></summary>
         <div class="entry-note"><h3>What I’d listen for</h3><p>I’d put one sentence through 20 rounds of transcription, translation and revoicing. I want to catch the first round where the words still sound plausible but the meaning has slipped.</p></div>
+      </details>
+      <details class="entry">
+        <summary><span class="entry-title">Choose your own adventure</span><span class="kind">Voice agents</span><span class="state">Idea</span></summary>
+        <div class="entry-note" id="agent-question"><h3>What I’d build</h3><p>I’d write a short story with a fork in the road and let the listener choose by speaking. A few scenes later, I’d ask the narrator about the road we took. Does its answer fit the story we actually heard?</p></div>
+      </details>
+      <details class="entry">
+        <summary><span class="entry-title">Imaginary radio station</span><span class="kind">Sound and storytelling</span><span class="state">Idea</span></summary>
+        <div class="entry-note" id="radio-question"><h3>Where I’d start</h3><p>A local DJ, one station jingle and a weather report from a place I’ve made up. I’d like to see how much of a town you can picture from a minute of radio.</p></div>
       </details>
     </section>
     <section id="experiments" aria-labelledby="experiments-title">
