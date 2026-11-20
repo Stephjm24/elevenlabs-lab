@@ -3,54 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Stephan Munroe’s public notebook of ElevenLabs experiments in voice, sound and interactive stories.">
+  <meta name="description" content="Stephan Munroe’s project index and field notes for experiments in voice and sound with ElevenLabs.">
   <title>ElevenLabs Lab · Stephan Munroe</title>
   <link rel="stylesheet" href="styles.css">
   <script src="gallery.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="mast">
-    <div class="wrap mast-inner">
-      <a class="identity" href="./" aria-label="Stephan Munroe, lab home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> Stephan Munroe</a>
-      <nav aria-label="Main navigation">
-        <a href="#notebook">Idea notebook</a>
-        <a href="https://github.com/Stephjm24/elevenlabs-lab">GitHub</a>
-      </nav>
-    </div>
+  <header class="mast wrap">
+    <a class="brand" href="./"><span aria-hidden="true" class="spine"></span>ElevenLabs Lab</a>
+    <nav aria-label="Main navigation"><a href="#notebook">Project index</a><a href="https://github.com/Stephjm24/elevenlabs-lab">GitHub</a></nav>
   </header>
   <main id="main" class="wrap">
-    <div class="hero">
-      <div class="intro">
-        <h1>ElevenLabs<br><em>Lab</em></h1>
-        <p>My public notebook for experiments in voice, sound and interactive stories. Here’s what I’m curious about, what I build and what I learn along the way.</p>
-        <a class="primary" href="#experiments">Explore the lab</a>
+    <article class="feature" aria-labelledby="feature-title">
+      <div class="lead">
+        <p class="byline">Stephan Munroe’s field notebook</p>
+        <h1 id="feature-title">What does a GPS that’s given up sound like?</h1>
+        <p class="intro">I want to give three voices the same directions and listen for the moment each one sounds resigned. Is it the pause before “turn left”, the pitch, or the words themselves?</p>
+        <a class="index-link" href="#notebook">Browse the project index</a>
       </div>
-      <div class="signal" aria-hidden="true"><img src="signal.webp" width="1080" height="720" alt=""></div>
-    </div>
+      <aside class="note" aria-labelledby="note-title">
+        <div class="note-header"><span class="pin" aria-hidden="true"></span><h2 id="note-title">Voice Design Zoo</h2><span>Proposed test</span></div>
+        <div class="note-body">
+          <h3>Draft reading line</h3>
+          <p class="script">“In 200 metres,<br>turn left.<br>Recalculating.”</p>
+          <p class="annotation">Try the last word twice. How long a pause before it sounds like a sigh?</p>
+        </div>
+      </aside>
+    </article>
+    <section class="index" id="notebook" aria-labelledby="index-title">
+      <div class="section-head"><h2 id="index-title">Project index</h2><a href="https://github.com/Stephjm24/elevenlabs-lab/blob/main/IDEAS.md">Full idea notebook</a></div>
+      <details class="entry">
+        <summary><span class="entry-title">Voice Design Zoo</span><span class="kind">Voice design</span><span class="state">Idea</span></summary>
+        <div class="entry-note"><h3>What I’d try</h3><p>Keep the directions fixed and change the character prompt for each take. I’d compare the three readings side by side, then save the prompts with the clips so someone else can hear what changed.</p></div>
+      </details>
+      <details class="entry">
+        <summary><span class="entry-title">Telephone Game</span><span class="kind">Speech and translation</span><span class="state">Idea</span></summary>
+        <div class="entry-note"><h3>What I’d listen for</h3><p>I’d put one sentence through 20 rounds of transcription, translation and revoicing. I want to catch the first round where the words still sound plausible but the meaning has slipped.</p></div>
+      </details>
+    </section>
     <section id="experiments" aria-labelledby="experiments-title">
       <h2 id="experiments-title">Published experiments</h2>
       <div id="projects"><p class="status">Browse the <a href="https://github.com/Stephjm24/elevenlabs-lab/tree/main/projects">project folders on GitHub</a>.</p></div>
     </section>
-    <section id="notebook" aria-labelledby="notebook-title">
-      <div class="section-heading">
-        <h2 id="notebook-title">From the idea notebook</h2>
-        <a class="text-link" href="https://github.com/Stephjm24/elevenlabs-lab/blob/main/IDEAS.md">All ideas</a>
-      </div>
-      <div class="ideas">
-        <article class="idea">
-          <p class="label">Voice design</p>
-          <h3>Voice Design Zoo</h3>
-          <p>What does a GPS that’s given up sound like? I want to see how closely a generated voice can match a character described in a single prompt.</p>
-        </article>
-        <article class="idea">
-          <p class="label">Speech loops</p>
-          <h3>Telephone Game</h3>
-          <p>How much of a sentence survives 20 rounds of transcription, translation and revoicing? I’d like to hear where the meaning starts to drift.</p>
-        </article>
-      </div>
-    </section>
   </main>
-  <footer class="wrap"><span>ElevenLabs Lab · Stephan Munroe</span><span>Experiment voices, audio and media are AI-generated with ElevenLabs.</span></footer>
+  <footer class="wrap"><strong>Stephan Munroe</strong><span>Experiment voices, audio and media are AI-generated with ElevenLabs.</span></footer>
 </body>
 </html>
