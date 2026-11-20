@@ -1,0 +1,70 @@
+:root {
+  color-scheme: dark;
+  --paper: #151715;
+  --ink: #f5f3e9;
+  --muted: #c1c2b8;
+  --line: #41433b;
+  --gold: #f5d86a;
+  --serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; }
+a { color: inherit; text-underline-offset: .23em; }
+a:hover { color: var(--gold); }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; }
+.wrap { width: min(100% - clamp(2.5rem, 10vw, 9rem), 76rem); margin-inline: auto; }
+.skip { position: absolute; top: -6rem; left: 1rem; background: var(--gold); color: var(--paper); padding: .5rem 1rem; z-index: 2; }
+.skip:focus { top: .5rem; color: var(--paper); }
+.mast { border-bottom: 1px solid var(--line); }
+.mast-inner, nav, .identity, .section-heading { display: flex; align-items: center; }
+.mast-inner { min-height: 4.5rem; justify-content: space-between; gap: 1rem; }
+.mast a { display: inline-flex; align-items: center; min-height: 2.75rem; text-decoration: none; }
+nav { gap: clamp(1rem, 3vw, 2.5rem); color: var(--muted); font-size: .9rem; }
+.identity { font-weight: 660; gap: .75rem; }
+.mark { display: flex; align-items: center; gap: 2px; background: var(--gold); padding: 0 6px; height: 27px; }
+.mark i { width: 2px; height: 7px; background: var(--paper); }
+.mark i:nth-child(2) { height: 14px; }
+.mark i:nth-child(3) { height: 20px; }
+.mark i:nth-child(4) { height: 11px; }
+.hero { display: grid; grid-template-columns: .94fr 1.12fr; align-items: center; gap: 2rem; padding: clamp(3rem, 5.4vw, 5rem) 0; }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: clamp(4.1rem, 6.8vw, 6.5rem); line-height: .94; font-weight: 600; letter-spacing: -.075em; }
+h1 em { font-family: var(--serif); font-weight: 400; color: var(--gold); letter-spacing: -.065em; }
+.intro p { max-width: 45ch; margin: 1.45rem 0; font-size: 1.075rem; color: var(--muted); }
+.primary { display: inline-block; padding: .65rem 1.05rem; background: var(--gold); color: #22241b; font-weight: 650; text-decoration: none; border-radius: 3px; }
+.primary:hover { background: #ffea95; color: var(--paper); }
+.signal { position: relative; border: 1px solid var(--line); padding: 7px; }
+.signal::before, .signal::after { content: ""; position: absolute; width: 17px; height: 17px; }
+.signal::before { top: -1px; left: -1px; border-top: 2px solid var(--gold); border-left: 2px solid var(--gold); }
+.signal::after { bottom: -1px; right: -1px; border-bottom: 2px solid var(--gold); border-right: 2px solid var(--gold); }
+.signal img { width: 100%; height: auto; display: block; }
+section { border-top: 1px solid var(--line); padding: 2rem 0 2.5rem; scroll-margin-top: 1rem; }
+h2 { font-family: var(--serif); font-size: clamp(1.85rem, 3vw, 2.65rem); font-weight: 400; line-height: 1.15; letter-spacing: -.035em; }
+.status { margin-top: .85rem; color: var(--muted); }
+.section-heading { justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.text-link, .project a { color: var(--gold); font-size: .95rem; }
+.ideas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+.idea { padding: clamp(1.25rem, 2.4vw, 2rem); border: 1px solid var(--line); background: #1c1e1a; }
+.label { font: .78rem/1.5 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .1em; color: var(--gold); }
+h3 { font-size: clamp(1.2rem, 2.1vw, 1.65rem); letter-spacing: -.035em; line-height: 1.25; }
+.idea h3, .project h3 { margin: .5rem 0; }
+.idea p:last-child, .project p:not(.label) { color: var(--muted); max-width: 63ch; }
+.project { padding: 1.5rem 0; }
+.project + .project { border-top: 1px solid var(--line); }
+.project audio { display: block; width: min(100%, 34rem); margin: 1rem 0; }
+.project a { display: inline-block; margin: .75rem 1.15rem 0 0; }
+footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 1.5rem; padding: 1.5rem 0 2rem; color: var(--muted); font-size: .85rem; }
+@media (max-width: 48rem) {
+  .hero { grid-template-columns: 1fr; gap: 1.8rem; }
+  .signal { max-width: 36rem; }
+  .signal img { aspect-ratio: 2.5; object-fit: cover; }
+  .ideas { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: .4rem; }
+}
+@media (max-width: 30rem) {
+  .mast-inner { gap: .5rem; flex-wrap: wrap; padding: .35rem 0; }
+  .identity { gap: .45rem; font-size: .95rem; }
+  nav { gap: .8rem; font-size: .85rem; }
+  .hero { padding: 2.5rem 0; }
+  .section-heading { align-items: start; flex-direction: column; gap: .5rem; }
+}
