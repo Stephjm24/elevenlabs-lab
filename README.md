@@ -1,6 +1,6 @@
 # ElevenLabs Lab
 
-Stephan Munroe’s public notebook for experiments with ElevenLabs. Each build starts with a question about voice, sound, agents or moving images. The lab notes pair the result with what worked, what broke and how to reproduce it.
+Stephan Munroe’s open notebook for experiments with ElevenLabs. Ideas range from questions about perception and voice to interactive fiction and imaginary radio. The project index holds proposed tests. Published entries pair a result with notes on what worked, what broke and how to reproduce it.
 
 [Visit the lab](https://stephjm24.github.io/elevenlabs-lab/) · [Browse the ideas](IDEAS.md) · [Add an experiment](#add-an-experiment)
 
