@@ -89,6 +89,11 @@ The two video characters speak the Lighthouse Keeper and Sourdough Starter lines
   - Put the delivery back into the line itself, with pauses and audio tags, and see if the saved tree slows down again.
   - Give OmniHuman a short direction prompt.
   - Try a lip-sync model built for cartoons and animals on the non-human characters.
+- **Notes on working with flows.**
+  - **One audio clip can drive several videos.** On a flow, a single speech clip can feed more than one node. I connected one speech take to different pictures and models, so one central piece of audio powered several videos at once. That’s how the side-by-side comparisons were built.
+  - **Running a node can run everything before it.** If you click run on a node further down the flow, such as the one that produces the final audio or video, it can also run the nodes that feed into it. Check exactly what you’re about to run before you press it, or you can spend credits regenerating things you already have.
+  - **Check My Voices before building.** Before wiring voices into a flow, check My Voices to make sure every voice you saved is there and enabled.
+  - **Still to find out: is there a way to collect everything?** I gathered the voices, clips and videos together by hand. I’d like to know whether ElevenLabs has a collection or folder option that keeps a project’s pieces in one place automatically. I’ll look into it as I learn more.
 
 ## How I made it
 

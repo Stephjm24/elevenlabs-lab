@@ -372,6 +372,14 @@
           <li>Give OmniHuman a short direction prompt, and try a lip-sync model built for cartoons and animals on the non-human characters.</li>
           <li>Animate the rest of the zoo with OmniHuman.</li>
         </ul>
+
+        <h3 id="flow-notes">Notes on working with flows</h3>
+        <ul>
+          <li><b>One audio clip can drive several videos.</b> On a flow, a single speech clip can feed more than one node. I connected one speech take to different pictures and models, so one central piece of audio powered several videos at once. That’s how the side-by-side comparisons were built.</li>
+          <li><b>Running a node can run everything before it.</b> If you click run on a node further down the flow, such as the one that produces the final audio or video, it can also run the nodes that feed into it. Check exactly what you’re about to run before you press it, or you can spend credits regenerating things you already have.</li>
+          <li><b>Check My Voices before building.</b> Before wiring voices into a flow, check My Voices to make sure every voice you saved is there and enabled.</li>
+          <li><b>Still to find out: is there a way to collect everything?</b> I gathered the voices, clips and videos together by hand. I’d like to know whether ElevenLabs has a collection or folder option that keeps a project’s pieces in one place automatically. I’ll look into it as I learn more.</li>
+        </ul>
       </div>
     </section>
 
