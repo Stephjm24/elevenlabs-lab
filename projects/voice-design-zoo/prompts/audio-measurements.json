@@ -1,0 +1,290 @@
+{
+ "lighthouse-keeper": {
+  "preview": {
+   "file": "lighthouse-keeper-preview.mp3",
+   "duration_s": 18.68,
+   "pitch_median_hz": 120.3,
+   "pitch_range_semitones": 15.3,
+   "loudness_lufs": -17.5,
+   "pause_ratio": 0.333,
+   "speech_s": 12.45,
+   "brightness_hz": 2944,
+   "chars_per_speech_s": 18.3
+  },
+  "speak": {
+   "file": "lighthouse-keeper-speak.mp3",
+   "duration_s": 16.48,
+   "pitch_median_hz": 143.5,
+   "pitch_range_semitones": 10.9,
+   "loudness_lufs": -16.2,
+   "pause_ratio": 0.25,
+   "speech_s": 12.35,
+   "brightness_hz": 2623,
+   "chars_per_speech_s": 18.5
+  }
+ },
+ "ancient-tree": {
+  "preview": {
+   "file": "ancient-tree-preview.mp3",
+   "duration_s": 30.2,
+   "pitch_median_hz": 88.6,
+   "pitch_range_semitones": 12.5,
+   "loudness_lufs": -18.4,
+   "pause_ratio": 0.434,
+   "speech_s": 17.08,
+   "brightness_hz": 2995,
+   "chars_per_speech_s": 10.1
+  },
+  "speak": {
+   "file": "ancient-tree-speak.mp3",
+   "duration_s": 19.52,
+   "pitch_median_hz": 117.6,
+   "pitch_range_semitones": 12.4,
+   "loudness_lufs": -19.0,
+   "pause_ratio": 0.292,
+   "speech_s": 13.82,
+   "brightness_hz": 2480,
+   "chars_per_speech_s": 12.4
+  }
+ },
+ "squirrel-stock-exchange": {
+  "preview": {
+   "file": "squirrel-stock-exchange-preview.mp3",
+   "duration_s": 13.4,
+   "pitch_median_hz": 393.2,
+   "pitch_range_semitones": 12.9,
+   "loudness_lufs": -18.4,
+   "pause_ratio": 0.165,
+   "speech_s": 11.19,
+   "brightness_hz": 2958,
+   "chars_per_speech_s": 16.4
+  },
+  "speak": {
+   "file": "squirrel-stock-exchange-speak.mp3",
+   "duration_s": 13.36,
+   "pitch_median_hz": 423.8,
+   "pitch_range_semitones": 15.2,
+   "loudness_lufs": -18.4,
+   "pause_ratio": 0.119,
+   "speech_s": 11.77,
+   "brightness_hz": 2775,
+   "chars_per_speech_s": 15.5
+  }
+ },
+ "gps-given-up": {
+  "preview": {
+   "file": "gps-given-up-preview.mp3",
+   "duration_s": 20.92,
+   "pitch_median_hz": 169.2,
+   "pitch_range_semitones": 7.5,
+   "loudness_lufs": -18.7,
+   "pause_ratio": 0.366,
+   "speech_s": 13.26,
+   "brightness_hz": 2562,
+   "chars_per_speech_s": 15.2
+  },
+  "speak": {
+   "file": "gps-given-up-speak.mp3",
+   "duration_s": 15.68,
+   "pitch_median_hz": 190.4,
+   "pitch_range_semitones": 11.7,
+   "loudness_lufs": -19.2,
+   "pause_ratio": 0.175,
+   "speech_s": 12.93,
+   "brightness_hz": 2054,
+   "chars_per_speech_s": 15.5
+  }
+ },
+ "victorian-crypto-ghost": {
+  "preview": {
+   "file": "victorian-crypto-ghost-preview.mp3",
+   "duration_s": 20.35,
+   "pitch_median_hz": 200.6,
+   "pitch_range_semitones": 29.1,
+   "loudness_lufs": -22.3,
+   "pause_ratio": 0.275,
+   "speech_s": 14.74,
+   "brightness_hz": 2570,
+   "chars_per_speech_s": 14.7
+  },
+  "speak": {
+   "file": "victorian-crypto-ghost-speak.mp3",
+   "duration_s": 16.32,
+   "pitch_median_hz": 210.7,
+   "pitch_range_semitones": 29.2,
+   "loudness_lufs": -22.3,
+   "pause_ratio": 0.198,
+   "speech_s": 13.1,
+   "brightness_hz": 2653,
+   "chars_per_speech_s": 16.5
+  }
+ },
+ "sourdough-starter": {
+  "preview": {
+   "file": "sourdough-starter-preview.mp3",
+   "duration_s": 32.84,
+   "pitch_median_hz": 73.8,
+   "pitch_range_semitones": 10.4,
+   "loudness_lufs": -20.2,
+   "pause_ratio": 0.28,
+   "speech_s": 23.64,
+   "brightness_hz": 2330,
+   "chars_per_speech_s": 8.3
+  },
+  "speak": {
+   "file": "sourdough-starter-speak.mp3",
+   "duration_s": 19.84,
+   "pitch_median_hz": 99.4,
+   "pitch_range_semitones": 13.8,
+   "loudness_lufs": -21.5,
+   "pause_ratio": 0.237,
+   "speech_s": 15.14,
+   "brightness_hz": 2230,
+   "chars_per_speech_s": 12.9
+  }
+ },
+ "town-crier-notifications": {
+  "preview": {
+   "file": "town-crier-notifications-preview.mp3",
+   "duration_s": 22.83,
+   "pitch_median_hz": 352.3,
+   "pitch_range_semitones": 15.6,
+   "loudness_lufs": -19.3,
+   "pause_ratio": 0.304,
+   "speech_s": 15.88,
+   "brightness_hz": 2274,
+   "chars_per_speech_s": 13.1
+  },
+  "speak": {
+   "file": "town-crier-notifications-speak.mp3",
+   "duration_s": 15.76,
+   "pitch_median_hz": 323.0,
+   "pitch_range_semitones": 9.0,
+   "loudness_lufs": -19.7,
+   "pause_ratio": 0.176,
+   "speech_s": 12.98,
+   "brightness_hz": 2306,
+   "chars_per_speech_s": 16.0
+  }
+ },
+ "sleepy-dragon": {
+  "preview": {
+   "file": "sleepy-dragon-preview.mp3",
+   "duration_s": 24.53,
+   "pitch_median_hz": 53.3,
+   "pitch_range_semitones": 6.6,
+   "loudness_lufs": -22.9,
+   "pause_ratio": 0.184,
+   "speech_s": 20.02,
+   "brightness_hz": 2385,
+   "chars_per_speech_s": 9.8
+  },
+  "speak": {
+   "file": "sleepy-dragon-speak.mp3",
+   "duration_s": 15.44,
+   "pitch_median_hz": 97.2,
+   "pitch_range_semitones": 17.7,
+   "loudness_lufs": -21.7,
+   "pause_ratio": 0.131,
+   "speech_s": 13.42,
+   "brightness_hz": 2480,
+   "chars_per_speech_s": 14.6
+  }
+ },
+ "anglerfish-jazz-dj": {
+  "preview": {
+   "file": "anglerfish-jazz-dj-preview.mp3",
+   "duration_s": 22.91,
+   "pitch_median_hz": 64.5,
+   "pitch_range_semitones": 11.5,
+   "loudness_lufs": -19.4,
+   "pause_ratio": 0.076,
+   "speech_s": 21.18,
+   "brightness_hz": 1021,
+   "chars_per_speech_s": 9.9
+  },
+  "speak": {
+   "file": "anglerfish-jazz-dj-speak.mp3",
+   "duration_s": 16.56,
+   "pitch_median_hz": 84.8,
+   "pitch_range_semitones": 14.4,
+   "loudness_lufs": -20.0,
+   "pause_ratio": 0.086,
+   "speech_s": 15.14,
+   "brightness_hz": 1169,
+   "chars_per_speech_s": 13.9
+  }
+ },
+ "push-mismatch": {
+  "preview": {
+   "file": "push-mismatch-preview.mp3",
+   "duration_s": 22.91,
+   "pitch_median_hz": 696.5,
+   "pitch_range_semitones": 11.1,
+   "loudness_lufs": -21.8,
+   "pause_ratio": 0.221,
+   "speech_s": 17.86,
+   "brightness_hz": 2187,
+   "chars_per_speech_s": 13.2
+  },
+  "speak": {
+   "file": "push-mismatch-speak.mp3",
+   "duration_s": 17.28,
+   "pitch_median_hz": 599.3,
+   "pitch_range_semitones": 15.4,
+   "loudness_lufs": -23.2,
+   "pause_ratio": 0.218,
+   "speech_s": 13.51,
+   "brightness_hz": 2264,
+   "chars_per_speech_s": 17.5
+  }
+ },
+ "push-non-human": {
+  "preview": {
+   "file": "push-non-human-preview.mp3",
+   "duration_s": 18.83,
+   "pitch_median_hz": 624.1,
+   "pitch_range_semitones": 7.0,
+   "loudness_lufs": -20.2,
+   "pause_ratio": 0.354,
+   "speech_s": 12.17,
+   "brightness_hz": 2116,
+   "chars_per_speech_s": 16.4
+  },
+  "speak": {
+   "file": "push-non-human-speak.mp3",
+   "duration_s": 15.2,
+   "pitch_median_hz": 647.9,
+   "pitch_range_semitones": 6.0,
+   "loudness_lufs": -20.4,
+   "pause_ratio": 0.277,
+   "speech_s": 10.98,
+   "brightness_hz": 2093,
+   "chars_per_speech_s": 18.1
+  }
+ },
+ "push-contradiction": {
+  "preview": {
+   "file": "push-contradiction-preview.mp3",
+   "duration_s": 18.6,
+   "pitch_median_hz": 223.2,
+   "pitch_range_semitones": 5.1,
+   "loudness_lufs": -20.1,
+   "pause_ratio": 0.277,
+   "speech_s": 13.44,
+   "brightness_hz": 3393,
+   "chars_per_speech_s": 14.9
+  },
+  "speak": {
+   "file": "push-contradiction-speak.mp3",
+   "duration_s": 18.4,
+   "pitch_median_hz": 225.8,
+   "pitch_range_semitones": 4.5,
+   "loudness_lufs": -20.2,
+   "pause_ratio": 0.247,
+   "speech_s": 13.86,
+   "brightness_hz": 3182,
+   "chars_per_speech_s": 14.4
+  }
+ }
+}

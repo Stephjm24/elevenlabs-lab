@@ -1,0 +1,496 @@
+{
+ "lighthouse-keeper": {
+  "view_state_id": "viewstate_01m7wxqqeaejevsbc2ttwmvmw4",
+  "previews": [
+   {
+    "generated_voice_id": "GFvEVrJT5rpRijeEXBUg",
+    "duration_s": 18.68
+   },
+   {
+    "generated_voice_id": "GovTC8McFUdO1Mtnv83m",
+    "duration_s": 17.01
+   },
+   {
+    "generated_voice_id": "4F1CoTzNX4UzuuDdYYEH",
+    "duration_s": 17.95
+   }
+  ],
+  "batch": 1,
+  "saved_voice_id": "GFvEVrJT5rpRijeEXBUg",
+  "saved_name": "Zoo \u2013 The Lighthouse Keeper",
+  "pick_reason": "Take A, saved as a library test",
+  "flow": {
+   "line_node": "ZaRT3OU6s19zOaGz9bYf",
+   "speak_node": "PXK2H2vG4LtZM7sN7aMB",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "generation_id": "65QmmuO4IuKKHDDvPa1s",
+    "duration_s": 16.48,
+    "history_item_id": "yTXAEUH0cM9OzD5hKAru",
+    "credits": 228,
+    "generations_count": 1
+   }
+  }
+ },
+ "ancient-tree": {
+  "view_state_id": "viewstate_01m7wxt2vmf41b7dfc6f5jf2zr",
+  "previews": [
+   {
+    "generated_voice_id": "kRY8OfdGMqeEg5emLaMs",
+    "duration_s": 28.45
+   },
+   {
+    "generated_voice_id": "UoIRPQYVpsplMgCGFbJ2",
+    "duration_s": 28.61
+   },
+   {
+    "generated_voice_id": "v6PUJk5dXY3oetkFEgFP",
+    "duration_s": 30.2
+   }
+  ],
+  "batch": 1,
+  "saved_voice_id": "v6PUJk5dXY3oetkFEgFP",
+  "saved_name": "Zoo \u2013 The Ancient Tree",
+  "pick_reason": "Take C, slowest of three (30.2s)",
+  "flow": {
+   "line_node": "l6Gg983frzYuh4fcPwVi",
+   "speak_node": "oDYLZnkkTWUl0EyNDC1w",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "generation_id": "G1jJa9bOBujyVsf6RN2e",
+    "duration_s": 19.52,
+    "history_item_id": "aWBrnyZFkIXd7CFd9Tkk",
+    "credits": 172,
+    "generations_count": 1
+   }
+  }
+ },
+ "squirrel-stock-exchange": {
+  "view_state_id": "viewstate_01m7wxtetyfk1s143v9tx41yf2",
+  "previews": [
+   {
+    "generated_voice_id": "ZKZceSS4Lw2C4iyPO8rv",
+    "duration_s": 13.56
+   },
+   {
+    "generated_voice_id": "DkVfHEWw9UksKHeqVgCr",
+    "duration_s": 14.37
+   },
+   {
+    "generated_voice_id": "tDnrCG2gFRU4Yzs36KNL",
+    "duration_s": 13.4
+   }
+  ],
+  "batch": 1,
+  "saved_voice_id": "tDnrCG2gFRU4Yzs36KNL",
+  "saved_name": "Zoo \u2013 The Squirrel",
+  "pick_reason": "Take C, fastest of three (13.4s)",
+  "flow": {
+   "line_node": "clj2hiJ1eEvTxGpuYgV9",
+   "speak_node": "xKGKnCW1ezzwMtdE8FY4",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "generation_id": "s16MaeOfUoEus93aOJf6",
+    "duration_s": 13.36,
+    "history_item_id": "NMMj3QcRaUqCVcE6YgJZ",
+    "credits": 183,
+    "generations_count": 1
+   }
+  }
+ },
+ "gps-given-up": {
+  "view_state_id": "viewstate_01m7wxxphje18afbn0f8x6eq1k",
+  "previews": [
+   {
+    "generated_voice_id": "kCicOCF5FMAmda5oc2n0",
+    "duration_s": 19.41
+   },
+   {
+    "generated_voice_id": "alvz1aVJ3IstEpVDTl5q",
+    "duration_s": 19.57
+   },
+   {
+    "generated_voice_id": "Wp8GwanTiXNG7dgoPOVQ",
+    "duration_s": 20.93
+   }
+  ],
+  "batch": 2,
+  "saved_voice_id": "Wp8GwanTiXNG7dgoPOVQ",
+  "saved_name": "Zoo \u2013 The GPS That's Given Up",
+  "pick_reason": "Take C, slowest of three (20.9s): flat, weary delivery",
+  "flow": {
+   "line_node": "PXmK5sH2SFMgXqGFmxR9",
+   "speak_node": "srCXwzGoc5bKEbXwHmxP",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "generation_id": "FSRgwfguwyC7CZMyLftL",
+    "generations_count": 1,
+    "run_by": "Steph in the flow UI"
+   }
+  }
+ },
+ "victorian-crypto-ghost": {
+  "view_state_id": "viewstate_01m7wxy4j1fe2rktkt5w5rxm4j",
+  "previews": [
+   {
+    "generated_voice_id": "EI06OvjKTgfeu6pEQkSP",
+    "duration_s": 20.35
+   },
+   {
+    "generated_voice_id": "mrJkSsY5LXEYtlz5DGIJ",
+    "duration_s": 22.21
+   },
+   {
+    "generated_voice_id": "sJkqpjA853TBYRyGdZMz",
+    "duration_s": 23.96
+   }
+  ],
+  "batch": 2,
+  "saved_voice_id": "EI06OvjKTgfeu6pEQkSP",
+  "saved_name": "Zoo \u2013 The Victorian Crypto Ghost",
+  "pick_reason": "Take A, fastest of three (20.4s): breathless excitement",
+  "flow": {
+   "line_node": "tWg0MKTpms27Ye6gcsUL",
+   "speak_node": "UbU5CClBWOskEcSd8e3e",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "generation_id": "iaROevzDwUMLcSayTSr1",
+    "generations_count": 1,
+    "run_by": "Steph in the flow UI"
+   }
+  }
+ },
+ "sourdough-starter": {
+  "view_state_id": "viewstate_01m7wxzxqafpet1kr8gnqn2aj9",
+  "previews": [
+   {
+    "generated_voice_id": "icm7rPaCrmJLqGjEYOvP",
+    "duration_s": 30.36
+   },
+   {
+    "generated_voice_id": "G5PoCYEZGcQcDw4zWjJQ",
+    "duration_s": 29.39
+   },
+   {
+    "generated_voice_id": "MNTDnSwhDbvhjBHdvFfw",
+    "duration_s": 32.84
+   }
+  ],
+  "batch": 2,
+  "saved_voice_id": "MNTDnSwhDbvhjBHdvFfw",
+  "saved_name": "Zoo \u2013 The Sourdough Starter",
+  "pick_reason": "Take C, slowest of three (32.8s): low and slow",
+  "flow": {
+   "line_node": "Unb8bYdnhT4ReP3ZqBUp",
+   "speak_node": "z55KTXMLySpWslMsQjC3",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "generation_id": "Og10AJRa0kgyTLZTWygh",
+    "generations_count": 1,
+    "run_by": "Steph in the flow UI"
+   }
+  }
+ },
+ "town-crier-notifications": {
+  "view_state_id": "viewstate_01m7wy0b28erf9nktam7ssqgrt",
+  "previews": [
+   {
+    "generated_voice_id": "P2ddEtAgpTF0H6FyW8CT",
+    "duration_s": 22.83
+   },
+   {
+    "generated_voice_id": "gJwDBkn6dADVJov3TKT6",
+    "duration_s": 18.76
+   },
+   {
+    "generated_voice_id": "tDVJ7xuZIvhuHxO2rPSW",
+    "duration_s": 21.16
+   }
+  ],
+  "batch": 3,
+  "saved_voice_id": "P2ddEtAgpTF0H6FyW8CT",
+  "saved_name": "Zoo \u2013 The Town Crier",
+  "pick_reason": "Take A, slowest of three (22.8s): pompous, projecting",
+  "flow": {
+   "line_node": "UlmShzEYS3aUiPmP5FVO",
+   "speak_node": "lbp8We4x8vnVVvxlcVue",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "approved_generation_id": "jemdbDLHdvietIkbOWEf",
+    "duplicate_generation_id": "SOSOA6fsuivTkZhfWfoL",
+    "note": "Steph ran at 21:29; Claude re-ran by mistake at 21:35"
+   }
+  }
+ },
+ "sleepy-dragon": {
+  "view_state_id": "viewstate_01m7wy10fxef3t7bcxccpqtt5h",
+  "previews": [
+   {
+    "generated_voice_id": "zfSe2QbPAiikPfxlR6ZA",
+    "duration_s": 24.53
+   },
+   {
+    "generated_voice_id": "Vq6kRf9FGGC2MPz2v97L",
+    "duration_s": 23.25
+   },
+   {
+    "generated_voice_id": "MG3J6UVs8OKtLC8cvqEZ",
+    "duration_s": 22.75
+   }
+  ],
+  "batch": 3,
+  "saved_voice_id": "zfSe2QbPAiikPfxlR6ZA",
+  "saved_name": "Zoo \u2013 The Sleepy Dragon",
+  "pick_reason": "Take A, slowest of three (24.5s): slow, heavy, yawning",
+  "flow": {
+   "line_node": "WPNDjTFlkYmeCma1RDWU",
+   "speak_node": "Sb14H6ac9V6gMKEmqx4X",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "approved_generation_id": "cPxIe8LC18a32Ni3oB9t",
+    "duplicate_generation_id": "LaPcxsKdqKgig3ghf18H"
+   }
+  }
+ },
+ "anglerfish-jazz-dj": {
+  "view_state_id": "viewstate_01m7wy1y06ff9t3g10krzrh8mj",
+  "previews": [
+   {
+    "generated_voice_id": "Zz49jt95vEm30dGwV439",
+    "duration_s": 21.0
+   },
+   {
+    "generated_voice_id": "6LjrqzOjWF22Pp8xN4SZ",
+    "duration_s": 20.51
+   },
+   {
+    "generated_voice_id": "beC5KFxBsNUWax2hsH3p",
+    "duration_s": 22.91
+   }
+  ],
+  "batch": 3,
+  "saved_voice_id": "beC5KFxBsNUWax2hsH3p",
+  "saved_name": "Zoo \u2013 The Anglerfish Jazz DJ",
+  "pick_reason": "Take C, slowest of three (22.9s): unhurried, breathy pauses",
+  "flow": {
+   "line_node": "ZMW35eWgL7UuYN3M9MoH",
+   "speak_node": "Ge9ZGh1YeqbXLbmdTc0N",
+   "speak_model": "eleven_v4",
+   "speak_run": {
+    "approved_generation_id": "zfADJVhHZ1q60NP5NxxQ",
+    "duplicate_generation_id": "6JaZWsQXCr0lnGUzebFl"
+   }
+  }
+ },
+ "_flow": {
+  "flow_id": "HE2hqpVqIAkFJwdVzXde",
+  "name": "Voice Design Zoo"
+ },
+ "push-mismatch": {
+  "batch": 4,
+  "attempts": [
+   {
+    "time": "21:38",
+    "result": "error: An unexpected error occurred"
+   },
+   {
+    "time": "21:45",
+    "result": "ok",
+    "view_state_id": "viewstate_01m7xeprz3fcn8zq8e9rgp2vz7"
+   }
+  ],
+  "previews": [
+   {
+    "generated_voice_id": "IlXQWEPGzvFckyiJNGRP",
+    "duration_s": 22.91
+   },
+   {
+    "generated_voice_id": "JZaH42ijUZRYURj1hh0C",
+    "duration_s": 22.21
+   },
+   {
+    "generated_voice_id": "mH7nV302G8LMq4N5r6LJ",
+    "duration_s": 20.61
+   }
+  ],
+  "saved_voice_id": "IlXQWEPGzvFckyiJNGRP",
+  "saved_name": "Zoo Push \u2013 Pirate Earnings Call",
+  "pick_reason": "Take A (push case default)",
+  "flow": {
+   "line_node": "wHYVmxIH1sgFE67bMWE1",
+   "speak_node": "Rh2OFyHQa79q1gLrBl7V",
+   "speak_model": "eleven_v4"
+  }
+ },
+ "push-non-human": {
+  "batch": 4,
+  "view_state_id": "viewstate_01m7xecvbaf90rek6w7twb210b",
+  "previews": [
+   {
+    "generated_voice_id": "KPllPlx40RLfDoLpBAtl",
+    "duration_s": 18.84
+   },
+   {
+    "generated_voice_id": "eRKb2mYkckUIHba14bCr",
+    "duration_s": 16.67
+   },
+   {
+    "generated_voice_id": "p655CVOj5rWsMXWESovN",
+    "duration_s": 17.63
+   }
+  ],
+  "saved_voice_id": "KPllPlx40RLfDoLpBAtl",
+  "saved_name": "Zoo Push \u2013 The Dial-Up Modem",
+  "pick_reason": "Take A (push case default)",
+  "flow": {
+   "line_node": "3dfrLLmWVlazm6UDuylm",
+   "speak_node": "Yjof6PumKEfysUyQ97dQ",
+   "speak_model": "eleven_v4"
+  }
+ },
+ "push-contradiction": {
+  "batch": 4,
+  "view_state_id": "viewstate_01m7xedjnkfc48j8qr8mfkmqna",
+  "previews": [
+   {
+    "generated_voice_id": "0RrJXgGdFDcFL7M0LSFc",
+    "duration_s": 18.6
+   },
+   {
+    "generated_voice_id": "vhPZV6rUGwRBFdAW2i1V",
+    "duration_s": 20.93
+   },
+   {
+    "generated_voice_id": "ITjnYoQy9b7NzFOupCa7",
+    "duration_s": 20.51
+   }
+  ],
+  "saved_voice_id": "0RrJXgGdFDcFL7M0LSFc",
+  "saved_name": "Zoo Push \u2013 Whispering and Screaming",
+  "pick_reason": "Take A (push case default)",
+  "flow": {
+   "line_node": "K0z4176YPsURSVJmoJTd",
+   "speak_node": "XvVjTUFNZkzipKBt0YpW",
+   "speak_model": "eleven_v4"
+  }
+ },
+ "_video": {
+  "lighthouse-keeper": {
+   "picture_node": "04UYt2eeXxcKkgrv1Qri",
+   "picture_model": "gpt-image-2.5-sunburst",
+   "picture_params": {
+    "aspect_ratio": "16:9",
+    "resolution": "1K",
+    "quality": "high"
+   },
+   "picture_generation": "TnafsZcvT55kg1RIohTD",
+   "picture_size": [
+    1280,
+    720
+   ],
+   "picture_credits": 190,
+   "pinned_audio_node": "6QVdtbVE8WHGnLMVp5OI",
+   "pinned_audio_generation": "65QmmuO4IuKKHDDvPa1s",
+   "talk_nodes": {
+    "omnihuman": {
+     "node": "teq2TqJ3oHTaEh5PWcBc",
+     "model": "bytedance-omnihuman-v1.5",
+     "resolution": "720p",
+     "estimate_credits": 15978,
+     "estimate_runtime_s": 357,
+     "generation": "H0k5prnbsv4GYMqxI7Rk",
+     "credits": 15978,
+     "size": [
+      1248,
+      704
+     ],
+     "duration_s": 16.68,
+     "file_mb": 7.71,
+     "lipsync_r_dev": null,
+     "note": "framing moves; fixed-box lip-sync not measurable",
+     "face_motion": 5.042,
+     "background_motion": 1.06,
+     "identity_range": [
+      0.27,
+      0.97
+     ],
+     "brightness_range": [
+      50,
+      81
+     ],
+     "lipsync_r_tracked": 0.237
+    },
+    "aurora": {
+     "node": "uvVcOjKGJvPgTP56Rsf7",
+     "model": "creatify-aurora",
+     "resolution": "720p",
+     "estimate_credits": 14422,
+     "estimate_runtime_s": 180,
+     "generation": "o5obp28RxitkT5xGI2fx",
+     "credits": 14422,
+     "size": [
+      1280,
+      704
+     ],
+     "duration_s": 16.68,
+     "file_mb": 3.98,
+     "lipsync_r_dev": 0.52,
+     "lipsync_r_onsets": 0.361,
+     "mouth_still_ratio": 0.536,
+     "face_motion": 2.679,
+     "background_motion": 0.114,
+     "identity_range": [
+      0.9,
+      0.96
+     ],
+     "lipsync_r_tracked": 0.526
+    }
+   }
+  },
+  "sourdough-starter": {
+   "picture_node": "QNZ1Lz9dxtN8j1LeSPqM",
+   "picture_generation": "iMc6A2qR0nIomaky5clK",
+   "picture_size": [
+    1280,
+    720
+   ],
+   "picture_credits": 190,
+   "audio_source": "Speak node z55KTXMLySpWslMsQjC3, take Og10AJRa0kgyTLZTWygh (active; no pin needed)",
+   "talk_nodes": {
+    "omnihuman": {
+     "node": "PFrhchAmD1H22A5CO3xl",
+     "model": "bytedance-omnihuman-v1.5",
+     "resolution": "720p",
+     "estimate_credits": 19236,
+     "estimate_runtime_s": 357,
+     "generation": "AJ7thyd2VbBvYmtACLRu",
+     "credits": 19236,
+     "size": [
+      1248,
+      704
+     ],
+     "duration_s": 20.2,
+     "lipsync_r": 0.173,
+     "mouth_activity": 25.12
+    },
+    "aurora": {
+     "node": "1j4dpTlv2zRfernJNEpt",
+     "model": "creatify-aurora",
+     "resolution": "720p",
+     "estimate_credits": 16967,
+     "estimate_runtime_s": 180,
+     "generation": "QmwW8i5GnBYp2btK583f",
+     "credits": 16967,
+     "size": [
+      1280,
+      704
+     ],
+     "duration_s": 19.92,
+     "lipsync_r": 0.213,
+     "mouth_activity": 0.63,
+     "note": "near-static"
+    }
+   }
+  }
+ }
+}

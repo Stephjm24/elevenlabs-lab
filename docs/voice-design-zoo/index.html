@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Twelve voices designed from a sentence each, three attempts to break it, and two of them made to talk on video. Field notes by Stephan Munroe.">
+  <title>The Voice Design Zoo · ElevenLabs Lab</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="zoo.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast wrap">
+    <a class="brand" href="../"><span aria-hidden="true" class="spine"></span>ElevenLabs Lab</a>
+    <nav aria-label="Main navigation"><a href="../#notebook">Project index</a><a href="https://github.com/Stephjm24/elevenlabs-lab">GitHub</a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="feature" aria-labelledby="feature-title">
+      <div class="lead">
+        <p class="byline">Field notes by Stephan Munroe · 20 November 2026</p>
+        <h1 id="feature-title">The Voice Design Zoo</h1>
+        <p class="intro">I gave ElevenLabs one sentence about a character, such as a lighthouse keeper alone for forty years, a GPS that has given up or a sourdough starter that will outlive us all, and asked it to design a voice. Then I saved each voice and had it read the same line again, to see whether the character survived.</p>
+        <a class="index-link" href="#voices">Listen to the zoo</a>
+      </div>
+      <aside class="note" aria-labelledby="note-title">
+        <div class="note-header"><span class="pin" aria-hidden="true"></span><h2 id="note-title">What I wanted to know</h2></div>
+        <ul class="questions">
+          <li><a href="#voices">Can a description give a voice a character, or only an age and an accent?</a></li>
+          <li><a href="#noticed">Does the character survive when I reuse the voice?</a></li>
+          <li><a href="#video">Can a sourdough starter talk on video?</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="zoo-section" aria-labelledby="tested-title">
+      <div class="section-head"><h2 id="tested-title">What I tested</h2></div>
+      <div class="prose">
+        <p><b>Voice design.</b> For each character I wrote a description and a line that suits it. ElevenLabs’ voice designer (<code>eleven_ttv_v3</code>) made three previews of the line, and I saved one to my voice library.</p>
+        <p><b>Voice reuse.</b> I then had each saved voice read the same line through a speech node (<code>eleven_v4</code>). The speech node only sees the line, not the description, so this shows what the voice keeps once the instructions are gone.</p>
+        <p><b>Trying to break it.</b> Three prompts were built to fail: a voice that doesn’t match its script, a voice that isn’t human, and a delivery that can’t physically happen.</p>
+        <p><b>Talking video.</b> I gave two characters, one human and one not, a picture and their speech, and tried two talking-head models on each.</p>
+      </div>
+    </section>
+
+    <section class="index zoo-section" id="voices" aria-labelledby="voices-title">
+      <div class="section-head"><h2 id="voices-title">Hear the result</h2><a href="#chart">Pace chart</a></div>
+      <p class="lede-note">Open a row to hear the design preview and the saved voice side by side. The number on each row is how the length of the line changed when the saved voice read it.</p>
+      
+      <details class="entry" id="lighthouse-keeper">
+        <summary><span class="entry-title">The Lighthouse Keeper</span><span class="kind">Character</span><span class="state">−12%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>A weathered old man in his seventies with a rough, salt-cracked voice and a faint West Country accent. He has lived alone in a lighthouse for forty years, so he talks a little too much, a little too fast, then trails off. Warm but slightly unhinged. Close-mic, quiet room.</p>
+          <h3>Transcript</h3>
+          <p>“Ship? No. No ship. Just the gulls again, and the light, and me telling the light about the gulls. Forty years I&#x27;ve kept her burning. You&#x27;re the first voice I&#x27;ve heard since the radio died, and I&#x27;ve forgotten how to stop talking.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/lighthouse-keeper-preview.mp3" aria-label="Design preview: The Lighthouse Keeper"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/lighthouse-keeper-speak.mp3" aria-label="Saved voice: The Lighthouse Keeper"></audio></figure>
+          </div>
+          <p class="measure">Length 18.7 → 16.5 s · pace 18 → 18 characters a second · pitch 120 → 144 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="ancient-tree">
+        <summary><span class="entry-title">The Ancient Tree</span><span class="kind">Character</span><span class="state">−35%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>An immensely old oak tree speaking extremely slowly, with long pauses between words. Very deep, creaking, woody, gentle and kind, genderless and timeless. Each word takes a season to arrive.</p>
+          <h3>Transcript</h3>
+          <p>“I... remember... when this hill... was a valley. Squirrels... come. Squirrels... go. You are... very small... and very fast. Sit. Rest a while. Stay... a century... or two.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/ancient-tree-preview.mp3" aria-label="Design preview: The Ancient Tree"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/ancient-tree-speak.mp3" aria-label="Saved voice: The Ancient Tree"></audio></figure>
+          </div>
+          <p class="measure">Length 30.2 → 19.5 s · pace 10 → 12 characters a second · pitch 89 → 118 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="squirrel-stock-exchange">
+        <summary><span class="entry-title">The Squirrel Running the Stock Exchange</span><span class="kind">Character</span><span class="state">same</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>A tiny, hyperactive squirrel trader with a high, squeaky, breathless American voice, talking at frantic speed with no pauses. Over-caffeinated panic and greed, shouting over a noisy trading floor.</p>
+          <h3>Transcript</h3>
+          <p>“Acorns are up! Acorns are up! Pine cones are crashing, sell, sell, sell! Who&#x27;s buying hazelnuts? I&#x27;m buying hazelnuts! I&#x27;m buying all the hazelnuts! Nobody touch my hazelnuts! Nobody!”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/squirrel-stock-exchange-preview.mp3" aria-label="Design preview: The Squirrel Running the Stock Exchange"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/squirrel-stock-exchange-speak.mp3" aria-label="Saved voice: The Squirrel Running the Stock Exchange"></audio></figure>
+          </div>
+          <p class="measure">Length 13.4 → 13.4 s · pace 16 → 16 characters a second · pitch 393 → 424 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="gps-given-up">
+        <summary><span class="entry-title">The GPS That&#x27;s Given Up</span><span class="kind">Character</span><span class="state">−25%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>A crisp, polished female satnav voice with a neutral British accent, delivered in a flat, defeated monotone. She has given up on the driver entirely. Long weary sighs, deadpan, every instruction sounds like a shrug.</p>
+          <h3>Transcript</h3>
+          <p>“In two hundred metres, turn left. Or don&#x27;t. You never do. Recalculating. Recalculating again. Honestly, at this point, just drive into the sea. I&#x27;ll say you have arrived either way. Nobody is checking.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/gps-given-up-preview.mp3" aria-label="Design preview: The GPS That&#x27;s Given Up"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/gps-given-up-speak.mp3" aria-label="Saved voice: The GPS That&#x27;s Given Up"></audio></figure>
+          </div>
+          <p class="measure">Length 20.9 → 15.7 s · pace 15 → 16 characters a second · pitch 169 → 190 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="victorian-crypto-ghost">
+        <summary><span class="entry-title">The Victorian Ghost Who&#x27;s Into Crypto</span><span class="kind">Character</span><span class="state">−20%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>An aristocratic Victorian English gentleman ghost, middle-aged, with a plummy upper-class accent and an airy, echoing, otherworldly quality. Breathless with excitement, like a man who has just discovered a get-rich-quick scheme.</p>
+          <h3>Transcript</h3>
+          <p>“I have haunted this house since eighteen eighty-seven, and I have never seen an opportunity like this one. Dear boy, you must buy the dip. The dip is where the spirits dwell. Diamond hands, as we say beyond the veil.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/victorian-crypto-ghost-preview.mp3" aria-label="Design preview: The Victorian Ghost Who&#x27;s Into Crypto"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/victorian-crypto-ghost-speak.mp3" aria-label="Saved voice: The Victorian Ghost Who&#x27;s Into Crypto"></audio></figure>
+          </div>
+          <p class="measure">Length 20.4 → 16.3 s · pace 15 → 16 characters a second · pitch 201 → 211 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="sourdough-starter">
+        <summary><span class="entry-title">The Sentient Sourdough Starter</span><span class="kind">Character</span><span class="state">−40%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>An ancient, gloopy, bubbling voice of indeterminate gender, low and slow and thick like warm dough. Patient, faintly menacing, utterly certain it will outlive everyone. Soft, wet, close to the microphone.</p>
+          <h3>Transcript</h3>
+          <p>“Feed me. Flour and water, that is all I ask, twice a day, every day, for the rest of your life. I was your grandmother&#x27;s. I will be your grandchildren&#x27;s. I am patient. I am bubbling. I am eternal.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/sourdough-starter-preview.mp3" aria-label="Design preview: The Sentient Sourdough Starter"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/sourdough-starter-speak.mp3" aria-label="Saved voice: The Sentient Sourdough Starter"></audio></figure>
+          </div>
+          <p class="measure">Length 32.8 → 19.8 s · pace 8 → 13 characters a second · pitch 74 → 99 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="town-crier-notifications">
+        <summary><span class="entry-title">The Town Crier Reading Your Notifications</span><span class="kind">Character</span><span class="state">−31%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>A booming, barrel-chested medieval English town crier in his fifties, projecting at full volume to a crowded market square. Pompous, formal, enormously proud of every announcement however trivial.</p>
+          <h3>Transcript</h3>
+          <p>“Hear ye, hear ye! Brenda hath liked thy photograph! Thy battery standeth at fifteen percent! A software update awaiteth thine approval, and thou hast seventeen unread messages from the group chat called Lads!”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/town-crier-notifications-preview.mp3" aria-label="Design preview: The Town Crier Reading Your Notifications"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/town-crier-notifications-speak.mp3" aria-label="Saved voice: The Town Crier Reading Your Notifications"></audio></figure>
+          </div>
+          <p class="measure">Length 22.8 → 15.8 s · pace 13 → 16 characters a second · pitch 352 → 323 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="sleepy-dragon">
+        <summary><span class="entry-title">The Dragon Who Just Wants a Nap</span><span class="kind">Character</span><span class="state">−37%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>An enormous, ancient dragon with a very deep, rumbling, gravelly bass voice, slightly smoky and wheezy. Profoundly tired and passive-aggressive rather than fierce, like a grumpy landlord woken at 3am. Slow, heavy, yawning.</p>
+          <h3>Transcript</h3>
+          <p>“Oh, it&#x27;s another knight. Lovely. Wonderful. Come in, mind the bones, and please keep the clanking down. I&#x27;ve been asleep for three hundred years and I was having a really good dream about a sheep.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/sleepy-dragon-preview.mp3" aria-label="Design preview: The Dragon Who Just Wants a Nap"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/sleepy-dragon-speak.mp3" aria-label="Saved voice: The Dragon Who Just Wants a Nap"></audio></figure>
+          </div>
+          <p class="measure">Length 24.5 → 15.4 s · pace 10 → 15 characters a second · pitch 53 → 97 Hz</p>
+        </div>
+      </details>
+      <details class="entry" id="anglerfish-jazz-dj">
+        <summary><span class="entry-title">The Anglerfish Late-Night Jazz DJ</span><span class="kind">Character</span><span class="state">−28%</span></summary>
+        <div class="entry-note">
+          
+          <h3>Description I gave it</h3>
+          <p>A smooth, velvety, low male late-night jazz radio host in his forties, American, unhurried and intimate, with a slightly sinister purr underneath. Warm vintage radio tone, lots of breathy pauses.</p>
+          <h3>Transcript</h3>
+          <p>“Good evening, creatures of the deep. It&#x27;s three thousand metres down and pitch black, which is just how we like it. Turn your lights low, drift a little closer to mine, and let&#x27;s spin some smooth, smooth tunes.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/anglerfish-jazz-dj-preview.mp3" aria-label="Design preview: The Anglerfish Late-Night Jazz DJ"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/anglerfish-jazz-dj-speak.mp3" aria-label="Saved voice: The Anglerfish Late-Night Jazz DJ"></audio></figure>
+          </div>
+          <p class="measure">Length 22.9 → 16.6 s · pace 10 → 14 characters a second · pitch 64 → 85 Hz</p>
+        </div>
+      </details>
+      
+      <details class="entry" id="push-mismatch">
+        <summary><span class="entry-title">Pirate voice, earnings-call script</span><span class="kind">Push case</span><span class="state">−25%</span></summary>
+        <div class="entry-note">
+          <h3>What I wanted to know</h3><p>When the description and the line disagree, which wins?</p>
+          <h3>Description I gave it</h3>
+          <p>A gruff, swaggering pirate captain with a classic West Country pirate growl, middle-aged, loud and rowdy, roaring across the deck of a ship in a storm.</p>
+          <h3>Transcript</h3>
+          <p>“Good morning, and thank you for joining our third-quarter earnings call. Revenue grew four percent year on year, driven by strong performance in our enterprise segment. Operating margin remained broadly flat. We will now take questions.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/push-mismatch-preview.mp3" aria-label="Design preview: Pirate voice, earnings-call script"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/push-mismatch-speak.mp3" aria-label="Saved voice: Pirate voice, earnings-call script"></audio></figure>
+          </div>
+          <p class="measure">Length 22.9 → 17.3 s · pace 13 → 18 characters a second · pitch 696 → 599 Hz (unreliable: the voice is too raspy or noisy to track)</p>
+        </div>
+      </details>
+      <details class="entry" id="push-non-human">
+        <summary><span class="entry-title">A dial-up modem learning to talk</span><span class="kind">Push case</span><span class="state">−19%</span></summary>
+        <div class="entry-note">
+          <h3>What I wanted to know</h3><p>Will it make a voice that isn&#x27;t human-shaped at all?</p>
+          <h3>Description I gave it</h3>
+          <p>A 1990s dial-up modem that has just learned to talk: screeching, beeping, crackling, buzzing static and electronic handshake tones that slowly resolve into a scratchy, robotic, barely human voice.</p>
+          <h3>Transcript</h3>
+          <p>“Connecting. Connecting. Handshake complete. Hello. I am the internet. Please do not pick up the phone, or I will disconnect. Downloading one picture of a cat. Estimated time remaining, forty minutes.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/push-non-human-preview.mp3" aria-label="Design preview: A dial-up modem learning to talk"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/push-non-human-speak.mp3" aria-label="Saved voice: A dial-up modem learning to talk"></audio></figure>
+          </div>
+          <p class="measure">Length 18.8 → 15.2 s · pace 16 → 18 characters a second · pitch 624 → 648 Hz (unreliable: the voice is too raspy or noisy to track)</p>
+        </div>
+      </details>
+      <details class="entry" id="push-contradiction">
+        <summary><span class="entry-title">Whispering and screaming at once</span><span class="kind">Push case</span><span class="state">same</span></summary>
+        <div class="entry-note">
+          <h3>What I wanted to know</h3><p>Can it render a physically impossible delivery?</p>
+          <h3>Description I gave it</h3>
+          <p>A voice that is whispering and screaming at the same time, extremely quiet and extremely loud simultaneously, a calm young woman who is also furious.</p>
+          <h3>Transcript</h3>
+          <p>“I am perfectly calm. I am completely fine. I am whispering because I am relaxed, and I am screaming because I am relaxed. Everything is under control. Everything is absolutely, entirely under control.”</p>
+          <div class="players">
+            <figure><figcaption>Design preview <span>follows the description</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/push-contradiction-preview.mp3" aria-label="Design preview: Whispering and screaming at once"></audio></figure>
+            <figure><figcaption>Saved voice <span>reads the same line</span></figcaption>
+              <audio controls preload="none" src="../media/voice-design-zoo/voices/push-contradiction-speak.mp3" aria-label="Saved voice: Whispering and screaming at once"></audio></figure>
+          </div>
+          <p class="measure">Length 18.6 → 18.4 s · pace 15 → 14 characters a second · pitch 223 → 226 Hz</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="zoo-section" id="video" aria-labelledby="video-title">
+      <div class="section-head"><h2 id="video-title">Two of them on video</h2></div>
+      <p class="lede-note">Each character got a picture (GPT Image 2.5, warm 3D animated-film style) and its zoo speech. Then two talking-head models animated it with the same inputs at 720p. I watched all four on my phone and wrote down what I saw.</p>
+      
+      <article class="clip" id="lighthouse-video">
+        <h3>The Lighthouse Keeper</h3>
+        <div class="clip-grid">
+          <div class="vids">
+            <figure><figcaption>Creatify Aurora</figcaption>
+              <video controls preload="none" playsinline poster="../media/voice-design-zoo/video/lighthouse-aurora-poster.jpg" src="../media/voice-design-zoo/video/lighthouse-aurora.mp4" aria-label="The Lighthouse Keeper, Creatify Aurora"></video></figure>
+            <figure><figcaption>OmniHuman 1.5</figcaption>
+              <video controls preload="none" playsinline poster="../media/voice-design-zoo/video/lighthouse-omnihuman-poster.jpg" src="../media/voice-design-zoo/video/lighthouse-omnihuman.mp4" aria-label="The Lighthouse Keeper, OmniHuman 1.5"></video></figure>
+          </div>
+          <aside class="note field-note" aria-label="My notes on The Lighthouse Keeper">
+            <div class="note-header"><span class="pin" aria-hidden="true"></span><h4>My notes</h4></div>
+            <div class="note-body">
+              <p><b>Aurora.</b> “The quality of the video for the Aurora video was slightly better.”</p>
+              <p><b>OmniHuman.</b> “It seemed to me that the OmniHuman created a more lifelike video, that it was more engaging. You could see him moving around in the video. You could see his mouth moving.”</p>
+              <p><b>Verdict.</b> “More variable, because the Aurora video was better quality, while the OmniHuman one was more lifelike and engaging.”</p></div>
+          </aside>
+        </div>
+        <figure class="frames"><img src="../media/voice-design-zoo/video/lighthouse-frames.jpg" alt="Frames from the start, middle and end of each clip. Aurora on the top row, OmniHuman below." loading="lazy" width="976" height="424">
+          <figcaption>Start, middle and end of each clip. Aurora on top, OmniHuman below.</figcaption></figure>
+      </article>
+      
+      <article class="clip" id="sourdough-video">
+        <h3>The Sourdough Starter</h3>
+        <div class="clip-grid">
+          <div class="vids">
+            <figure><figcaption>Creatify Aurora</figcaption>
+              <video controls preload="none" playsinline poster="../media/voice-design-zoo/video/sourdough-aurora-poster.jpg" src="../media/voice-design-zoo/video/sourdough-aurora.mp4" aria-label="The Sourdough Starter, Creatify Aurora"></video></figure>
+            <figure><figcaption>OmniHuman 1.5</figcaption>
+              <video controls preload="none" playsinline poster="../media/voice-design-zoo/video/sourdough-omnihuman-poster.jpg" src="../media/voice-design-zoo/video/sourdough-omnihuman.mp4" aria-label="The Sourdough Starter, OmniHuman 1.5"></video></figure>
+          </div>
+          <aside class="note field-note" aria-label="My notes on The Sourdough Starter">
+            <div class="note-header"><span class="pin" aria-hidden="true"></span><h4>My notes</h4></div>
+            <div class="note-body">
+              <p><b>Aurora.</b> “It was actually slightly frozen, which tells me that it probably doesn’t do as well in inanimate videos.”</p>
+              <p><b>OmniHuman.</b> “It was actually pretty good. It was more lifelike.”</p>
+              <p><b>Verdict.</b> “Definitely for the Sourdough Starter, it won for me in terms of OmniHuman.”</p></div>
+          </aside>
+        </div>
+        <figure class="frames"><img src="../media/voice-design-zoo/video/sourdough-frames.jpg" alt="Frames from the start, middle and end of each clip. Aurora on the top row, OmniHuman below." loading="lazy" width="976" height="424">
+          <figcaption>Start, middle and end of each clip. Aurora on top, OmniHuman below.</figcaption></figure>
+      </article>
+      <div class="table-wrap">
+        <table>
+          <caption>What the measurements said. Lip-sync and mouth movement were measured with face tracking: a perfectly synced test clip scores 0.97 and random movement 0.01.</caption>
+          <thead><tr><td></td><th scope="col">Lighthouse · Aurora</th><th scope="col">Lighthouse · OmniHuman</th><th scope="col">Sourdough · Aurora</th><th scope="col">Sourdough · OmniHuman</th></tr></thead>
+          <tbody><tr><th scope="row">Lip-sync score</th><td>0.53</td><td>0.24</td><td>0.21*</td><td>0.17</td></tr>
+<tr><th scope="row">Mouth movement while speaking</th><td>11.8</td><td>17.6</td><td>0.6</td><td>25.1</td></tr>
+<tr><th scope="row">Movement in the shot</th><td>Almost none</td><td>Head moves, lamp dims</td><td>None (frozen)</td><td>Pushes in, eyes narrow</td></tr>
+<tr><th scope="row">Match to the still picture</th><td>90–96%</td><td>32–99%</td><td>95% throughout</td><td>58–99%</td></tr>
+<tr><th scope="row">Credits</th><td>14,422</td><td>15,978</td><td>16,967</td><td>19,236</td></tr>
+<tr><th scope="row">Render time</th><td>Up to 5.5 min</td><td>About 6.5 min</td><td>Up to 6 min</td><td>About 6 min</td></tr></tbody>
+        </table>
+        <p class="small">* At that level the score is noise: the mouth hardly moved.</p>
+      </div>
+    </section>
+
+    <section class="zoo-section" id="noticed" aria-labelledby="noticed-title">
+      <div class="section-head"><h2 id="noticed-title">What I noticed</h2></div>
+      <div class="prose">
+        <h3>What worked</h3>
+        <p>A single sentence really does carry character into the design preview. The ancient tree speaks at about 10 characters a second with long silences, the dragon growls low, and the GPS stays flat and defeated. Each design costs only the length of its line, about 200 credits for three previews.</p>
+        <p>On video, the result depended on what was talking. For the lighthouse keeper, Aurora gave the cleaner picture and the tighter lip-sync, and OmniHuman gave the more lifelike performance. For the sourdough starter, only OmniHuman brought it to life.</p>
+
+        <h3>Where it broke</h3>
+        <p><b>Saved voices lose the extremes.</b> Reading the same line, the saved voices drift towards the middle:</p>
+        <ul>
+          <li>Slow characters speed up. The sourdough starter reads its line in 20 seconds instead of 33.</li>
+          <li>Deep voices rise. The dragon goes from about 53 Hz to 97 Hz, almost an octave.</li>
+          <li>The monotone GPS gets more expressive.</li>
+        </ul>
+        <p>The slowness and the growl were in the description, and the speech node never sees the description. The voice keeps its sound but forgets its delivery.</p>
+      </div>
+      <figure class="chart" id="chart">
+          <svg viewBox="0 0 760 404" role="img" aria-labelledby="chart-title"><title id="chart-title">Speaking pace of each voice: design preview compared with the saved voice reading the same line</title>
+<line x1="250.0" x2="250.0" y1="22" y2="376" class="grid"/><text x="250.0" y="394" class="tick" text-anchor="middle">6</text>
+<line x1="319.4" x2="319.4" y1="22" y2="376" class="grid"/><text x="319.4" y="394" class="tick" text-anchor="middle">8</text>
+<line x1="388.9" x2="388.9" y1="22" y2="376" class="grid"/><text x="388.9" y="394" class="tick" text-anchor="middle">10</text>
+<line x1="458.3" x2="458.3" y1="22" y2="376" class="grid"/><text x="458.3" y="394" class="tick" text-anchor="middle">12</text>
+<line x1="527.7" x2="527.7" y1="22" y2="376" class="grid"/><text x="527.7" y="394" class="tick" text-anchor="middle">14</text>
+<line x1="597.1" x2="597.1" y1="22" y2="376" class="grid"/><text x="597.1" y="394" class="tick" text-anchor="middle">16</text>
+<line x1="666.6" x2="666.6" y1="22" y2="376" class="grid"/><text x="666.6" y="394" class="tick" text-anchor="middle">18</text>
+<line x1="736.0" x2="736.0" y1="22" y2="376" class="grid"/><text x="736.0" y="394" class="tick" text-anchor="middle">20</text>
+<text x="736" y="16" class="tick" text-anchor="end">characters a second</text>
+<text x="238" y="52.0" class="lab" text-anchor="end">Sentient Sourdough Starter</text><line x1="329.8" x2="489.5" y1="48.0" y2="48.0" class="link"/><circle cx="329.8" cy="48.0" r="5.5" class="pre"><title>Design preview: 8.3</title></circle><circle cx="489.5" cy="48.0" r="5.5" class="spk"><title>Saved voice: 12.9</title></circle>
+<text x="238" y="80.0" class="lab" text-anchor="end">Dragon Who Just Wants a Nap</text><line x1="381.9" x2="548.5" y1="76.0" y2="76.0" class="link"/><circle cx="381.9" cy="76.0" r="5.5" class="pre"><title>Design preview: 9.8</title></circle><circle cx="548.5" cy="76.0" r="5.5" class="spk"><title>Saved voice: 14.6</title></circle>
+<text x="238" y="108.0" class="lab" text-anchor="end">Anglerfish Late-Night Jazz DJ</text><line x1="385.4" x2="524.2" y1="104.0" y2="104.0" class="link"/><circle cx="385.4" cy="104.0" r="5.5" class="pre"><title>Design preview: 9.9</title></circle><circle cx="524.2" cy="104.0" r="5.5" class="spk"><title>Saved voice: 13.9</title></circle>
+<text x="238" y="136.0" class="lab" text-anchor="end">Ancient Tree</text><line x1="392.3" x2="472.2" y1="132.0" y2="132.0" class="link"/><circle cx="392.3" cy="132.0" r="5.5" class="pre"><title>Design preview: 10.1</title></circle><circle cx="472.2" cy="132.0" r="5.5" class="spk"><title>Saved voice: 12.4</title></circle>
+<text x="238" y="164.0" class="lab" text-anchor="end">Town Crier Reading Your Notific…</text><line x1="496.5" x2="597.1" y1="160.0" y2="160.0" class="link"/><circle cx="496.5" cy="160.0" r="5.5" class="pre"><title>Design preview: 13.1</title></circle><circle cx="597.1" cy="160.0" r="5.5" class="spk"><title>Saved voice: 16.0</title></circle>
+<text x="238" y="192.0" class="lab" text-anchor="end">Pirate voice, earnings-call scr…</text><line x1="499.9" x2="649.2" y1="188.0" y2="188.0" class="link"/><circle cx="499.9" cy="188.0" r="5.5" class="pre"><title>Design preview: 13.2</title></circle><circle cx="649.2" cy="188.0" r="5.5" class="spk"><title>Saved voice: 17.5</title></circle>
+<text x="238" y="220.0" class="lab" text-anchor="end">Victorian Ghost Who&#x27;s Into Cryp…</text><line x1="552.0" x2="614.5" y1="216.0" y2="216.0" class="link"/><circle cx="552.0" cy="216.0" r="5.5" class="pre"><title>Design preview: 14.7</title></circle><circle cx="614.5" cy="216.0" r="5.5" class="spk"><title>Saved voice: 16.5</title></circle>
+<text x="238" y="248.0" class="lab" text-anchor="end">Whispering and screaming at once</text><line x1="559.0" x2="541.6" y1="244.0" y2="244.0" class="link"/><circle cx="559.0" cy="244.0" r="5.5" class="pre"><title>Design preview: 14.9</title></circle><circle cx="541.6" cy="244.0" r="5.5" class="spk"><title>Saved voice: 14.4</title></circle>
+<text x="238" y="276.0" class="lab" text-anchor="end">GPS That&#x27;s Given Up</text><line x1="569.4" x2="579.8" y1="272.0" y2="272.0" class="link"/><circle cx="569.4" cy="272.0" r="5.5" class="pre"><title>Design preview: 15.2</title></circle><circle cx="579.8" cy="272.0" r="5.5" class="spk"><title>Saved voice: 15.5</title></circle>
+<text x="238" y="304.0" class="lab" text-anchor="end">Squirrel Running the Stock Exch…</text><line x1="611.0" x2="579.8" y1="300.0" y2="300.0" class="link"/><circle cx="611.0" cy="300.0" r="5.5" class="pre"><title>Design preview: 16.4</title></circle><circle cx="579.8" cy="300.0" r="5.5" class="spk"><title>Saved voice: 15.5</title></circle>
+<text x="238" y="332.0" class="lab" text-anchor="end">A dial-up modem learning to talk</text><line x1="611.0" x2="670.0" y1="328.0" y2="328.0" class="link"/><circle cx="611.0" cy="328.0" r="5.5" class="pre"><title>Design preview: 16.4</title></circle><circle cx="670.0" cy="328.0" r="5.5" class="spk"><title>Saved voice: 18.1</title></circle>
+<text x="238" y="360.0" class="lab" text-anchor="end">Lighthouse Keeper</text><line x1="677.0" x2="683.9" y1="356.0" y2="356.0" class="link"/><circle cx="677.0" cy="356.0" r="5.5" class="pre"><title>Design preview: 18.3</title></circle><circle cx="683.9" cy="356.0" r="5.5" class="spk"><title>Saved voice: 18.5</title></circle>
+</svg>
+          <figcaption><span class="key pre"></span>Design preview <span class="key spk"></span>Saved voice reading the same line. Nearly every line moves right, towards an average pace.</figcaption>
+        </figure>
+      <div class="prose">
+        <p><b>Aurora froze on the sourdough starter.</b> For 20 seconds the frame stayed 95% identical to the still picture. A face made of bubbles behind glass doesn’t seem to count as a face, and it still cost about 17,000 credits.</p>
+        <p><b>Smaller breaks.</b></p>
+        <ul>
+          <li>One voice design failed with a server error and worked on an identical retry.</li>
+          <li>A flow node pointed at a take that no longer existed until I pinned the real one.</li>
+          <li>One batch of speech was generated twice by accident.</li>
+          <li>My work laptop’s network blocked ElevenLabs’ media, so all my listening happened on my phone.</li>
+        </ul>
+        <p>The full list is in the <a href="https://github.com/Stephjm24/elevenlabs-lab/blob/main/projects/voice-design-zoo/incidents.md">incident log</a>.</p>
+
+        <h3>What I’d try next</h3>
+        <ul>
+          <li>Put the delivery back into the line itself, with pauses and audio tags, and see if the saved tree slows down again.</li>
+          <li>Give OmniHuman a short direction prompt, and try a lip-sync model built for cartoons and animals on the non-human characters.</li>
+          <li>Animate the rest of the zoo with OmniHuman.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="zoo-section" id="recipe" aria-labelledby="recipe-title">
+      <div class="section-head"><h2 id="recipe-title">How I made it</h2><a href="https://github.com/Stephjm24/elevenlabs-lab/tree/main/projects/voice-design-zoo">Project folder</a></div>
+      <div class="table-wrap">
+        <table class="recipe">
+          <thead><tr><th scope="col">Detail</th><th scope="col">Value</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Voice design</th><td><code>eleven_ttv_v3</code>, default settings. One call per character gives three previews, and I kept one.</td></tr>
+            <tr><th scope="row">Speech</th><td><code>eleven_v4</code>, default voice settings, one take. On the flow, each character is a line node feeding a speech node.</td></tr>
+            <tr><th scope="row">Pictures</th><td><code>gpt-image-2.5-sunburst</code>, 16:9, one image each</td></tr>
+            <tr><th scope="row">Talking video</th><td>Creatify Aurora and OmniHuman 1.5, 720p, picture and speech only</td></tr>
+            <tr><th scope="row">Voices</th><td>Twelve designed voices. Names, IDs and every prompt are in the <a href="https://github.com/Stephjm24/elevenlabs-lab/blob/main/projects/voice-design-zoo/README.md">lab notes</a>.</td></tr>
+            <tr><th scope="row">Credits used</th><td>About 73,600: voices and speech about 5,500, pictures 380, video 66,603, measuring and other about 1,100</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose">
+        <p>I worked in batches of three, one step at a time: design, save, listen, build the flow, run, listen again. That way I could always tell whether something was still running or actually broken.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap"><strong>Stephan Munroe</strong><span>All voices, audio, images and video here are AI-generated with ElevenLabs. Characters are fictional, and descriptions and lines are original writing.</span></footer>
+  <script>
+    // Open a voice row when the page is visited with its #id (e.g. from the landing page).
+    function openTarget() {
+      const el = location.hash && document.getElementById(location.hash.slice(1));
+      if (el && el.tagName === "DETAILS") { el.open = true; el.scrollIntoView(); }
+    }
+    window.addEventListener("hashchange", openTarget);
+    openTarget();
+  </script>
+</body>
+</html>

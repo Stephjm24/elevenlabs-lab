@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "title": "The Voice Design Zoo",
+    "pushes": "Voice design",
+    "hook": "Can a one-sentence description give a voice a character, and does that character survive when the voice is reused?",
+    "audio": "media/voice-design-zoo/voices/gps-given-up-preview.mp3",
+    "caption": "The GPS That’s Given Up, as designed. Listen for the flat, defeated delivery, then hear on the experiment page how much of it the saved voice keeps.",
+    "link": "voice-design-zoo/",
+    "notes": "https://github.com/Stephjm24/elevenlabs-lab/blob/main/projects/voice-design-zoo/README.md"
+  }
+]
